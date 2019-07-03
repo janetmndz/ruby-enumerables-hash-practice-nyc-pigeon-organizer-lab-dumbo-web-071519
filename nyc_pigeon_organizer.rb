@@ -15,7 +15,12 @@ def nyc_pigeon_organizer(data)
           }
         else
           p "inside else"
-          p pigeon_list[pigeon_name][category]
+          if pigeon_list[pigeon_name][category]
+            pigeon_list[pigeon_name][category].push("#{key.to_s}")
+          else 
+             pigeon_list[pigeon_name][category] = ["#{key.to_s}"]
+          end
+          p pigeon_list
         end
         count += 1
       end
