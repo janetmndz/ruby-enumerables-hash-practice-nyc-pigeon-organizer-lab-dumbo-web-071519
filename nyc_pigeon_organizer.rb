@@ -1,3 +1,4 @@
 def nyc_pigeon_organizer(data)
-  p date.keys
+  pigeon_list = {}
+  p data.keys
 end
