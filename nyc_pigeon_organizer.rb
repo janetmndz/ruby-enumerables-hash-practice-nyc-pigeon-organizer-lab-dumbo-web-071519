@@ -21,6 +21,7 @@ def nyc_pigeon_organizer(data)
              pigeon_list[pigeon_name][category] = ["#{key.to_s}"]
           end
           p pigeon_list
+          p "end inside"
         end
         count += 1
       end
