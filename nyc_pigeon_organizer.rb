@@ -1,6 +1,7 @@
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
-  data.keys.each {|id|
-    p data[id] ### this returns either color/gender/lives
+  data.keys.each {|category|
+    p data[category] ### this returns either color/gender/lives
+    data[":#{category}"]
   }
 end
