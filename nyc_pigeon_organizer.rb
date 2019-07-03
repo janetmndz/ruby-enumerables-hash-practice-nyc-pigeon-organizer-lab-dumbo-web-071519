@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
       p val ## returns array
       count = 0
       while count < val.length do
-        if !pigeon_list.include? (val[count])
+        if !pigeon_list.include?(val[count])
           pigeon_list[val[count]] = {
             
           }
