@@ -13,7 +13,6 @@ def nyc_pigeon_organizer(data)
           pigeon_list[pigeon_name] = {
             category => ["#{key.to_s}"]
           }
-          p pigeon_list
         else
           p "inside else"
           p pigeon_list[pigeon_name][category]
