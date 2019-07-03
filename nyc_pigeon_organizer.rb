@@ -14,11 +14,9 @@ def nyc_pigeon_organizer(data)
             category => ["#{key.to_s}"]
           }
         else
-          if memo[pigeon_name][category]
-            memo[pigeon_name][category].push("#{key.to_s}")
-          else 
-             memo[pigeon_name][category] = ["#{key.to_s}"]
-          end
+          memo_p = memo[pigeon_name][category]
+          
+          memo_p ? memo_p.push("#{key.to_s}") : memo_p = ["#{key.to_s}"]
         end
         count += 1
       end
