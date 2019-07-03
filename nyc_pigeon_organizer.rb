@@ -5,10 +5,13 @@ def nyc_pigeon_organizer(data)
     data[category].each {|(key, val)|
       #p key ## returns sub categories
       #p val ## returns array
+      
       count = 0
       while count < val.length do
+        
         if !pigeon_list.include?(val[count])
           pigeon_name = pigeon_list[val[count]]
+          p pigeon_name
           pigeon_list[pigeon_name] = {
             category => ["#{key.to_s}"]
           }
