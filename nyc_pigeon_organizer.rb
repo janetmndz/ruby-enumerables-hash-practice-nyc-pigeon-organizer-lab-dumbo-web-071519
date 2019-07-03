@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
           }
         else
           p "inside else"
-          pigeon_list[pigeon_name]
+          p pigeon_list[pigeon_name]
         end
         count += 1
       end
