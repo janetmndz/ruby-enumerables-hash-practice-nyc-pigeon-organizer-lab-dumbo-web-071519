@@ -15,8 +15,8 @@ def nyc_pigeon_organizer(data)
           }
           p pigeon_list
         else
-          pigeon_list[pigeon_name][category] = pigeon_list[pigeon_name][category] ? pigeon_list[pigeon_name][category] += key.to_s : ["#{key.to_s}"]
-        end 
+          p pigeon_list[pigeon_name][category]
+        end
         count += 1
       end
       p pigeon_list
