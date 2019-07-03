@@ -1,4 +1,6 @@
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
-  p data.keys
+  data.keys.each {|id|
+    p data[id]
+  }
 end
