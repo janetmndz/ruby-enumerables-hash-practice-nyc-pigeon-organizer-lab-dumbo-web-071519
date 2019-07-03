@@ -8,13 +8,12 @@ def nyc_pigeon_organizer(data)
       
       count = 0
       while count < val.length do
-        
-        if !pigeon_list.include?(val[count])
-          pigeon_name = val[count]
-          p pigeon_name
+        pigeon_name = val[count]
+        if !pigeon_list.include?(pigeon_name)
           pigeon_list[pigeon_name] = {
             category => ["#{key.to_s}"]
           }
+          p pigeon_list
         else
           pigeon_name[category] = pigeon_name[category] ? pigeon_name[category].push(key.to_s) : ["#{key.to_s}"]
         end 
