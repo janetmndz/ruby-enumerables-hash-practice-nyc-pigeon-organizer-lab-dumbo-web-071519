@@ -1,7 +1,6 @@
 def nyc_pigeon_organizer(data)
-  data.keys.reduce({}) {|memo, (key, value)|
-    p key
-    p value
+  data.keys.reduce({}) {|memo, category|
+    p category
     p memo
   }
 end
