@@ -17,7 +17,6 @@ def nyc_pigeon_organizer(data)
           else 
              memo[pigeon_name][category] = ["#{key.to_s}"]
           end
-          
         end
         count += 1
       end
